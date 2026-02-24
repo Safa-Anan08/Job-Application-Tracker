@@ -206,7 +206,7 @@ function createCard(job) {
 function emptyHTML() {
   return `
     <div class="text-center mt-10">
-      <img src="https://cdn-icons-png.flaticon.com/512/4076/4076549.png" class="w-24 mx-auto mb-4">
+      <img src="../images/folder.png" class="w-24 mx-auto mb-4">
       <h2 class="text-xl font-bold">No jobs Available</h2>
       <p class="text-gray-500">Check Back Soon</p>
     </div>
