@@ -23,11 +23,11 @@ function calculateCount() {
   
 
   if (currentStatus === 'all-filter-btn') {
-    tabCount.innerText = allCardSection.children.length;
+    tabCount.innerText = `${allCardSection.children.length} Jobs`;
   } else if (currentStatus === 'interview-filter-btn') {
-    tabCount.innerText = interviewList.length;
+    tabCount.innerText = `${interviewList.length}  of ${allCardSection.children.length} Jobs`;
   } else {
-    tabCount.innerText = rejectedList.length;
+    tabCount.innerText = `${rejectedList.length}  of  ${allCardSection.children.length} Jobs`;
   }
 }
 
@@ -208,7 +208,7 @@ function emptyHTML() {
     <div class="text-center mt-10">
       <img src="https://cdn-icons-png.flaticon.com/512/4076/4076549.png" class="w-24 mx-auto mb-4">
       <h2 class="text-xl font-bold">No jobs Available</h2>
-      <p class="text-gray-500">Please add or move jobs</p>
+      <p class="text-gray-500">Check Back Soon</p>
     </div>
   `;
 }
